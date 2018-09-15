@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/*
+ * VARIABLES
+ */
+/*
+ * Paramètres généraux
+ */
+/* line 13, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* line 17, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
+html, body {
+  height: auto;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  background-color: #f0f0f0; }
+
+/* line 26, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #A33074;
+  margin: 0; }
+
+/* line 34, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
+a {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500; }
+
+/* line 39, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
+p, span {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400; }
+
+/* line 46, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
+header .navbar-fixed nav {
+  height: 90px; }
+  /* line 48, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
+  header .navbar-fixed nav .nav-wrapper {
+    height: 100%;
+    padding: 0 10px;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    /* line 57, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
+    header .navbar-fixed nav .nav-wrapper .brand-logo {
+      height: 100%;
+      display: block;
+      position: static; }
+      /* line 62, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
+      header .navbar-fixed nav .nav-wrapper .brand-logo img {
+        height: 98%;
+        width: auto; }
+    /* line 67, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
+    header .navbar-fixed nav .nav-wrapper h1 {
+      font-size: 28px;
+      margin: 0 0 0 20px; }
+
+/* line 76, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
+footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 5px;
+  left: 0;
+  text-align: center;
+  font-size: 12px;
+  color: #000; }
+
+/* line 1, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+.page-connexion {
+  height: calc(100vh - 90px);
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  /* line 8, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+  .page-connexion .container {
+    border-radius: 20px;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    /* line 16, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+    .page-connexion .container .zone-title {
+      width: 100%;
+      margin-bottom: 30px;
+      background-color: #A33074;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      /* line 26, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+      .page-connexion .container .zone-title h2 {
+        color: #fff;
+        padding: 15px 0; }
+    /* line 32, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+    .page-connexion .container p {
+      padding: 0 15px; }
+    /* line 36, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+    .page-connexion .container form {
+      width: 100%;
+      margin-top: 40px; }
+      /* line 40, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+      .page-connexion .container form .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; }
+        /* line 46, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+        .page-connexion .container form .row .input-field {
+          margin: 0 0 20px 0; }
+          /* line 49, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+          .page-connexion .container form .row .input-field label {
+            font-size: 18px;
+            margin-bottom: 15px; }
+        /* line 54, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+        .page-connexion .container form .row button {
+          background-color: #0083C7; }
+    /* line 59, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+    .page-connexion .container .message {
+      margin-top: 20px; }

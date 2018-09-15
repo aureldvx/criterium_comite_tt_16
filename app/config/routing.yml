@@ -1,3 +1,4 @@
-app:
-    resource: '@AppBundle/Controller/'
-    type: annotation
+ctt_criterium:
+    resource: "@CTTCriteriumBundle/Resources/config/routing.yml"
+    prefix:   /
+

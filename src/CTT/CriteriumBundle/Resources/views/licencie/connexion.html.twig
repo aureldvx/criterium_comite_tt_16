@@ -1,0 +1,30 @@
+{% extends '@CTTCriterium/licencie/layout-licencie.html.twig' %}
+
+{% block page_title %}Connexion Licencié{% endblock %}
+
+{% block main_page %}
+<section class="page-connexion">
+    <div class="container z-depth-2">
+        <div class="zone-title">
+            <h2>Connexion Licencié</h2>
+        </div>
+        <p>Merci de rentrer votre numéro de licence pour vérifier que vous êtes bien inscrit sur les listes de critérium du Département.</p>
+        <form action="{{ path('licencie_connexion') }}" method="post" role="form">
+            <div class="row">
+                <div class="input-field col s12 m8 l6">
+                    <input type="text" placeholder="Ex : 1610123" pattern="\d+" autofocus id="numero-licence" name="numero-licence">
+                    <label for="numero-licence">Votre n° de licence</label>
+                </div>
+                <button type="submit" class="btn waves-effects waves-light">Valider</button>
+                {% for message in app.flashes('notice') %}
+                    <article class="message is-danger">
+                        <div class="message-body">
+                            {{ message }}
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

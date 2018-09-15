@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr_FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {# Importation de la bibliothèque d'icônes Material Design #}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" crossorigin="anonymous">
+    {# Importation Google Font #}
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:500,700|Barlow:400,600" rel="stylesheet">
+    {# Importation de Bulma #}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" crossorigin="anonymous">
+    {# Importation de Materialize #}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" crossorigin="anonymous">
+    {# Importation des styles perso #}
+    <link rel="stylesheet" href="{{ asset('bundles/cttcriterium/css/style.css') }}" crossorigin="anonymous">
+    {# Génération du titre de la page #}
+    <title>{% block page_title %}{% endblock %} - Comité Charente TT</title>
+</head>
+<body>
+<header>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="brand-logo">
+                    <img src="{{ asset('bundles/cttcriterium/images/logo-comite.png') }}" alt="Logo Comité Charente Tennis de Table">
+                </div>
+                <h1>Validation de participation au Critérium Départemental</h1>
+            </div>
+        </nav>
+    </div>
+</header>
+{% block main_page %}{% endblock %}
+<footer>
+    <p>&copy; Comité Charente Tennis de Table – 2018 | Réalisé par AD-CRÉAWEB</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+{% block javascript %}{% endblock %}
+</body>
+</html>

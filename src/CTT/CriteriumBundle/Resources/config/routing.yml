@@ -1,0 +1,16 @@
+licencie_connexion:
+    path: /
+    defaults:
+        _controller: CTTCriteriumBundle:Licencie:connexion
+        
+licencie_validation:
+    path: /validation/{licence}
+    defaults:
+        _controller: CTTCriteriumBundle:Licencie:validation
+    requirements:
+        licence: '\d+'
+        
+admin_dashboard:
+    path: /admin8052917
+    defaults:
+        _controller: CTTCriteriumBundle:Admin:dashboard
