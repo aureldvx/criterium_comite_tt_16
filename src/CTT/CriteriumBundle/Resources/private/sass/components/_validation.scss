@@ -1,0 +1,111 @@
+.page-validation {
+  min-height: calc(100vh - 90px);
+  margin-top: 50px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    border-radius: 20px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .zone-title {
+      width: 100%;
+      margin-bottom: 30px;
+      background-color: $purple;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        color: $white;
+        padding: 15px 0;
+      }
+    }
+
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      .row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        &.choice-zone {
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          margin-bottom: 0;
+
+          span {
+            color: $black;
+          }
+        }
+        &:nth-child(2) {
+          margin-bottom: 0;
+        }
+
+        .input-field {
+          margin: 0 0 20px 0;
+          &.zone-date {
+            margin-top: 25px;
+          }
+
+          label {
+            font-size: 18px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+
+      #naissance:not(.browser-default) {
+        border-bottom: 1px solid $blue;
+      }
+      #naissance:focus:not(.browser-default) {
+        border-bottom: 1px solid #26A69A;
+      }
+      #naissance:not(.browser-default):not([readonly])+label {
+        color: $blue;
+      }
+      #naissance:not(.browser-default):focus:not([readonly])+label {
+        color: #26A69A;
+      }
+
+      .divider {
+        width: 100%;
+        height: 2px;
+        margin-bottom: 20px;
+        background: linear-gradient(to right, $blue, $purple);
+      }
+
+
+
+      p {
+        padding-left: 15px;
+        margin-bottom: 10px;
+      }
+
+      button {
+        background-color: $blue;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+    }
+    .message {
+      margin-top: 20px;
+    }
+  }
+}

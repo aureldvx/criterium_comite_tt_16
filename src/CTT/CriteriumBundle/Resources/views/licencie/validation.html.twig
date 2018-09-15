@@ -1,0 +1,68 @@
+{% extends '@CTTCriterium/licencie/layout-licencie.html.twig' %}
+
+{% block page_title %}Validation participation{% endblock %}
+
+{% block main_page %}
+<section class="page-validation">
+    <div class="container z-depth-2">
+        <div class="zone-title">
+            <h2>Choix de participation – TOUR 1</h2>
+        </div>
+        <form action="{{ path('licencie_traitement') }}" method="post" role="form">
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <input type="text" name="nom" id="nom" value="{{ licencie.nom | upper }} {{ licencie.prenom | capitalize}}" disabled>
+                    <label for="nom">NOM Prénom</label>
+                </div>
+                <div class="input-field col s12 m3">
+                    <input type="text" name="licence" id="licence" value="{{ licencie.licence }}" disabled>
+                    <label for="licence">Licence n°</label>
+                </div>
+                <div class="input-field col s12 m3">
+                    <input type="text" name="categorie" id="categorie" value="{{ licencie.licence }}" disabled>
+                    <label for="categorie">Catégorie</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m4">
+                    <input type="text" name="points" id="points" value="{{ licencie.licence }}" disabled>
+                    <label for="points">Nombre de points</label>
+                </div>
+                <div class="input-field col s12 m8">
+                    <input type="text" name="club" id="club" value="{{ licencie.licence }}" disabled>
+                    <label for="club">Club</label>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <p>Je confirme que pour ce tour, je :</p>
+            <div class="row choice-zone">
+                <p>
+                    <label>
+                        <input name="participation" id="participe-oui" type="radio"/>
+                        <span>Participe à la compétition</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="participation" id="participe-non" type="radio"/>
+                        <span>NE participe PAS à la compétition</span>
+                    </label>
+                </p>
+                <div class="input-field col s12 m8 l6 zone-date">
+                    <input type="text" name="naissance" id="naissance" placeholder="jj/mm/aaaa" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" required>
+                    <label for="naissance">Votre date de naissance (format jj/mm/aaaa)</label>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <button type="submit" class="btn waves-effects waves-light">Valider mon choix</button>
+            {% for message in app.flashes('notice') %}
+                <article class="message is-danger">
+                    <div class="message-body">
+                        {{ message }}
+                    </div>
+                </article>
+            {% endfor %}
+        </form>
+    </div>
+</section>
+{% endblock %}

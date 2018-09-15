@@ -45,7 +45,16 @@ class LicencieController extends Controller
      */
     public function validationAction(Liste $liste, Request $request)
     {
-        return new Response('Votre numéro de licence est :' . $liste->getLicence() . '.');
-        //return $this->render('@CTTCriterium/licencie/validation.html.twig');
+        return $this->render('@CTTCriterium/licencie/validation.html.twig', array(
+            'licencie' => $liste
+        ));
+    }
+
+    public function traitementAction(Request $request)
+    {
+        if($request->isMethod('POST'))
+        {
+            $licence = $_POST['licence'];
+        }
     }
 }

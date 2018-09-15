@@ -10,6 +10,11 @@ licencie_validation:
     requirements:
         licence: '\d+'
         
+licencie_traitement:
+    path: /traitement
+    defaults:
+        _controller: CTTCriteriumBundle:Licencie:traitement
+        
 admin_dashboard:
     path: /admin8052917
     defaults:
