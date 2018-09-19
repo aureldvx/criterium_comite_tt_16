@@ -74,18 +74,20 @@ header {
 }
 
 @media screen and (min-width: 640px) {
-  .nav-wrapper {
+  header .navbar-fixed nav .nav-wrapper {
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
 
     .brand-logo {
       img {
         height: 98%;
+        width: auto;
       }
-      h1 {
-        font-size: 28px;
-        margin: 0 0 0 20px;
-      }
+    }
+    h1 {
+      font-size: 22px;
+      margin: 0 0 0 20px;
     }
   }
 }

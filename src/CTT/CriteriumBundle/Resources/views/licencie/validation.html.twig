@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="divider"></div>
-            <button type="submit" class="btn waves-effects waves-light">Valider mon choix</button>
+            <button type="submit" class="btn btn-submit waves-effects waves-light" disabled>Valider mon choix</button>
             {% for message in app.flashes('notice') %}
                 <article class="message is-danger">
                     <div class="message-body">
@@ -65,4 +65,41 @@
         </form>
     </div>
 </section>
+{% endblock %}
+{% block javascript %}
+<script type="text/javascript">
+    $(document).ready(function() {
+        var checkYes = $("#participe-oui");
+        var checkNo = $("#participe-non");
+        var checkDate = $("#naissance");
+        var yesAttr = 0;
+        var noAttr = 0;
+        var dateAttr = 0;
+
+        function checkRadio()
+        {
+            if(checkYes.prop('checked')){yesAttr = 1;}else{yesAttr = 0}
+            if(checkNo.prop('checked')){noAttr = 1;}else{noAttr = 0}
+            if(checkDate.val() !== ''){dateAttr = 1}else{dateAttr = 0}
+
+            if((yesAttr === 1 || noAttr === 1) && dateAttr === 1)
+            {
+                $(".btn-submit").removeAttr("disabled");
+            }
+        }
+
+        checkYes.click(function(){
+            checkRadio();
+        });
+
+        checkNo.click(function()
+        {
+            checkRadio();
+        });
+
+        checkDate.keyup(function(){
+            checkRadio();
+        })
+    })
+    </script>
 {% endblock %}

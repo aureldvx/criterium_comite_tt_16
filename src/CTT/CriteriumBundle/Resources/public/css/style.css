@@ -74,7 +74,10 @@ header .navbar-fixed nav {
 
 @media screen and (min-width: 640px) {
   /* line 77, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
-  .nav-wrapper {
+  header .navbar-fixed nav .nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -82,15 +85,16 @@ header .navbar-fixed nav {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
-    /* line 82, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
-    .nav-wrapper .brand-logo img {
-      height: 98%; }
-    /* line 85, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
-    .nav-wrapper .brand-logo h1 {
-      font-size: 28px;
+    /* line 83, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
+    header .navbar-fixed nav .nav-wrapper .brand-logo img {
+      height: 98%;
+      width: auto; }
+    /* line 88, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
+    header .navbar-fixed nav .nav-wrapper h1 {
+      font-size: 22px;
       margin: 0 0 0 20px; } }
 
-/* line 93, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
+/* line 95, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
 footer {
   width: 100vw;
   margin-top: 40px;
@@ -180,7 +184,19 @@ footer {
         /* line 54, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
         .page-connexion .container form .row button {
           background-color: #0083C7; }
-    /* line 59, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+      /* line 58, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+      .page-connexion .container form #numero-licence:not(.browser-default) {
+        border-bottom: 1px solid #0083C7; }
+      /* line 61, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+      .page-connexion .container form #numero-licence:focus:not(.browser-default) {
+        border-bottom: 1px solid #26A69A; }
+      /* line 64, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+      .page-connexion .container form #numero-licence:not(.browser-default):not([readonly]) + label {
+        color: #0083C7; }
+      /* line 67, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+      .page-connexion .container form #numero-licence:not(.browser-default):focus:not([readonly]) + label {
+        color: #26A69A; }
+    /* line 71, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
     .page-connexion .container .message {
       margin-top: 20px; }
 

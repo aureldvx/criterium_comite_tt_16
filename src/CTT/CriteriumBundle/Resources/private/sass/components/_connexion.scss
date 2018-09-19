@@ -55,6 +55,18 @@
           background-color: $blue;
         }
       }
+      #numero-licence:not(.browser-default) {
+        border-bottom: 1px solid $blue;
+      }
+      #numero-licence:focus:not(.browser-default) {
+        border-bottom: 1px solid #26A69A;
+      }
+      #numero-licence:not(.browser-default):not([readonly])+label {
+        color: $blue;
+      }
+      #numero-licence:not(.browser-default):focus:not([readonly])+label {
+        color: #26A69A;
+      }
     }
     .message {
       margin-top: 20px;
