@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="participation")
  * @ORM\Entity(repositoryClass="CTT\CriteriumBundle\Repository\ParticipationRepository")
+ * @ORM\HasLifecycleCallbacks()
  */
 class Participation
 {
@@ -70,6 +71,22 @@ class Participation
      */
     private $licence;
 
+
+    /**
+     * @ORM\PrePersist
+     */
+    public function createDate()
+    {
+        $this->setDateChoix(new \DateTime());
+    }
+
+    /**
+     * @ORM\PreUpdate
+     */
+    public function updateModification()
+    {
+        $this->setDateModification(new \DateTime());
+    }
 
     /**
      * Get id.

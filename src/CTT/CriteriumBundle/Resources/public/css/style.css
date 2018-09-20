@@ -109,13 +109,21 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  /* line 8, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+  /* line 9, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+  .page-connexion .notification-valid {
+    width: 300px;
+    text-align: center; }
+  /* line 14, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
   .page-connexion .container {
     border-radius: 20px;
     background-color: #fff;
@@ -132,7 +140,7 @@ footer {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
-    /* line 16, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+    /* line 22, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
     .page-connexion .container .zone-title {
       width: 100%;
       margin-bottom: 30px;
@@ -148,18 +156,18 @@ footer {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-      /* line 26, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+      /* line 32, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
       .page-connexion .container .zone-title h2 {
         color: #fff;
         padding: 15px 0; }
-    /* line 32, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+    /* line 38, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
     .page-connexion .container p {
       padding: 0 15px; }
-    /* line 36, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+    /* line 42, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
     .page-connexion .container form {
       width: 100%;
       margin-top: 40px; }
-      /* line 40, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+      /* line 46, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
       .page-connexion .container form .row {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -174,29 +182,29 @@ footer {
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start; }
-        /* line 46, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+        /* line 52, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
         .page-connexion .container form .row .input-field {
           margin: 0 0 20px 0; }
-          /* line 49, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+          /* line 55, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
           .page-connexion .container form .row .input-field label {
             font-size: 18px;
             margin-bottom: 15px; }
-        /* line 54, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+        /* line 60, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
         .page-connexion .container form .row button {
           background-color: #0083C7; }
-      /* line 58, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+      /* line 64, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
       .page-connexion .container form #numero-licence:not(.browser-default) {
         border-bottom: 1px solid #0083C7; }
-      /* line 61, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+      /* line 67, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
       .page-connexion .container form #numero-licence:focus:not(.browser-default) {
         border-bottom: 1px solid #26A69A; }
-      /* line 64, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+      /* line 70, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
       .page-connexion .container form #numero-licence:not(.browser-default):not([readonly]) + label {
         color: #0083C7; }
-      /* line 67, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+      /* line 73, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
       .page-connexion .container form #numero-licence:not(.browser-default):focus:not([readonly]) + label {
         color: #26A69A; }
-    /* line 71, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
+    /* line 77, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
     .page-connexion .container .message {
       margin-top: 20px; }
 
@@ -342,4 +350,5 @@ footer {
         margin-bottom: 20px; }
     /* line 107, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_validation.scss */
     .page-validation .container .message {
-      margin-top: 20px; }
+      margin: 0 auto 20px auto;
+      width: 98%; }

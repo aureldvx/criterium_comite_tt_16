@@ -4,6 +4,11 @@
 
 {% block main_page %}
 <section class="page-connexion">
+    {% for message in app.flashes('valid') %}
+        <div class="notification is-primary notification-valid">
+            {{ message }}
+        </div>
+    {% endfor %}
     <div class="container z-depth-2">
         <div class="zone-title">
             <h2>Connexion Licencié</h2>
