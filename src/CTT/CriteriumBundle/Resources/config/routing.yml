@@ -19,3 +19,8 @@ admin_dashboard:
     path: /admin8052917
     defaults:
         _controller: CTTCriteriumBundle:Admin:dashboard
+        
+admin_export:
+    path: /admin8052917/export-csv
+    defaults:
+        _controller: CTTCriteriumBundle:Admin:export

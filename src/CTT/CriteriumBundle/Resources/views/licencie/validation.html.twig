@@ -19,17 +19,18 @@
                     <label for="licence">Licence n°</label>
                 </div>
                 <div class="input-field col s12 m3">
-                    <input type="text" name="categorie" id="categorie" value="{{ licencie.licence }}" disabled>
-                    <label for="categorie">Catégorie</label>
+                    <input type="text" name="points" id="points" value="{{ licencie.points }}" disabled>
+                    <label for="points">Nombre de points</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s12 m4">
-                    <input type="text" name="points" id="points" value="{{ licencie.licence }}" disabled>
-                    <label for="points">Nombre de points</label>
+                    <input type="text" name="categorie" id="categorie" value="{{ licencie.categorie | capitalize }}" disabled>
+                    <label for="categorie">Catégorie</label>
                 </div>
+
                 <div class="input-field col s12 m8">
-                    <input type="text" name="club" id="club" value="{{ licencie.licence }}" disabled>
+                    <input type="text" name="club" id="club" value="{{ licencie.club | capitalize }}" disabled>
                     <label for="club">Club</label>
                 </div>
             </div>

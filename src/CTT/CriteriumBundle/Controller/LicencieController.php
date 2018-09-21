@@ -86,16 +86,8 @@ class LicencieController extends Controller
                 $nomLicencie = $licencie->getNom();
                 $prenomLicencie = $licencie->getPrenom();
                 $naissanceLicencie = $licencie->getNaissance();
-                $trouve = 0;
 
-                $repository2 = $em->getRepository('CTTCriteriumBundle:Participation');
-                $validation = $repository2->findOneBy(array(
-                    "licence" => $numeroLicence
-                ));
-
-                if($validation == null){
-                    $validation = new Participation();
-                }
+                $validation = new Participation();
 
                 $validation->setLicence($numeroLicence);
                 $validation->setNom($nomLicencie);
@@ -109,10 +101,7 @@ class LicencieController extends Controller
                     $validation->setParticipation(false);
                 }
 
-                if($trouve !== 0)
-                {
-                    $em->persist($validation);
-                }
+                $em->persist($validation);
                 $em->flush();
             }
             $request->getSession()->getFlashBag()->add('valid','Votre choix a été enregistré !');

@@ -2,6 +2,8 @@
 
 namespace CTT\CriteriumBundle\Repository;
 
+use Doctrine\ORM\Query;
+
 /**
  * ParticipationRepository
  *
@@ -10,4 +12,12 @@ namespace CTT\CriteriumBundle\Repository;
  */
 class ParticipationRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findInscrits()
+    {
+        $queryBuilder = $this->createQueryBuilder('p');
+        $query = $queryBuilder->getQuery();
+        $results = $query->getResult(Query::HYDRATE_ARRAY);
+
+        return $results;
+    }
 }
