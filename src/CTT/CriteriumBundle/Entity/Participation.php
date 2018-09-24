@@ -39,6 +39,13 @@ class Participation
     /**
      * @var string
      *
+     * @ORM\Column(name="sexe", type="string", length=255)
+     */
+    private $sexe;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="licence", type="string", length=255)
      */
     private $licence;
@@ -375,5 +382,29 @@ class Participation
     public function getClub()
     {
         return $this->club;
+    }
+
+    /**
+     * Set sexe.
+     *
+     * @param string $sexe
+     *
+     * @return Participation
+     */
+    public function setSexe($sexe)
+    {
+        $this->sexe = $sexe;
+
+        return $this;
+    }
+
+    /**
+     * Get sexe.
+     *
+     * @return string
+     */
+    public function getSexe()
+    {
+        return $this->sexe;
     }
 }

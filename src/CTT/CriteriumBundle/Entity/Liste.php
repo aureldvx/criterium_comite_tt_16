@@ -31,6 +31,13 @@ class Liste
     /**
      * @var string
      *
+     * @ORM\Column(name="sexe", type="string", length=255)
+     */
+    private $sexe;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="nom", type="string", length=255)
      */
     private $nom;
@@ -278,5 +285,29 @@ class Liste
     public function getClub()
     {
         return $this->club;
+    }
+
+    /**
+     * Set sexe.
+     *
+     * @param string $sexe
+     *
+     * @return Liste
+     */
+    public function setSexe($sexe)
+    {
+        $this->sexe = $sexe;
+
+        return $this;
+    }
+
+    /**
+     * Get sexe.
+     *
+     * @return string
+     */
+    public function getSexe()
+    {
+        return $this->sexe;
     }
 }

@@ -7,8 +7,7 @@
  */
 /* line 13, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 /* line 17, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
 html, body {
@@ -45,19 +44,10 @@ header .navbar-fixed nav {
     height: 100%;
     padding: 0 10px;
     background-color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; }
     /* line 57, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
     header .navbar-fixed nav .nav-wrapper .brand-logo {
       height: 100%;
@@ -75,16 +65,9 @@ header .navbar-fixed nav {
 @media screen and (min-width: 640px) {
   /* line 77, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
   header .navbar-fixed nav .nav-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
+    flex-direction: row;
+    justify-content: flex-start; }
     /* line 83, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_general.scss */
     header .navbar-fixed nav .nav-wrapper .brand-logo img {
       height: 98%;
@@ -106,19 +89,10 @@ footer {
 .page-connexion {
   min-height: calc(100vh - 90px);
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
   /* line 9, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
   .page-connexion .notification-valid {
     width: 300px;
@@ -127,19 +101,10 @@ footer {
   .page-connexion .container {
     border-radius: 20px;
     background-color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; }
     /* line 22, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
     .page-connexion .container .zone-title {
       width: 100%;
@@ -147,15 +112,9 @@ footer {
       background-color: #A33074;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      align-items: center;
+      justify-content: center; }
       /* line 32, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
       .page-connexion .container .zone-title h2 {
         color: #fff;
@@ -169,19 +128,10 @@ footer {
       margin-top: 40px; }
       /* line 46, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
       .page-connexion .container form .row {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start; }
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; }
         /* line 52, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_connexion.scss */
         .page-connexion .container form .row .input-field {
           margin: 0 0 20px 0; }
@@ -213,32 +163,17 @@ footer {
   min-height: calc(100vh - 90px);
   margin-top: 50px;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  align-items: center;
+  justify-content: center; }
   /* line 9, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_validation.scss */
   .page-validation .container {
     border-radius: 20px;
     background-color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; }
     /* line 17, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_validation.scss */
     .page-validation .container .zone-title {
       width: 100%;
@@ -246,15 +181,9 @@ footer {
       background-color: #A33074;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      align-items: center;
+      justify-content: center; }
       /* line 27, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_validation.scss */
       .page-validation .container .zone-title h2 {
         color: #fff;
@@ -262,47 +191,22 @@ footer {
     /* line 34, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_validation.scss */
     .page-validation .container form {
       width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start; }
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start; }
       /* line 41, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_validation.scss */
       .page-validation .container form .row {
         width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly; }
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly; }
         /* line 47, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_validation.scss */
         .page-validation .container form .row.choice-zone {
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          -webkit-box-align: start;
-              -ms-flex-align: start;
-                  align-items: flex-start;
-          -webkit-box-pack: start;
-              -ms-flex-pack: start;
-                  justify-content: flex-start;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
           margin-bottom: 0; }
           /* line 53, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_validation.scss */
           .page-validation .container form .row.choice-zone span {
@@ -337,7 +241,6 @@ footer {
         width: 100%;
         height: 2px;
         margin-bottom: 20px;
-        background: -webkit-gradient(linear, left top, right top, from(#0083C7), to(#A33074));
         background: linear-gradient(to right, #0083C7, #A33074); }
       /* line 96, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_validation.scss */
       .page-validation .container form p {

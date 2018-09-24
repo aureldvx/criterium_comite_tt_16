@@ -39,6 +39,13 @@ class Participation
     /**
      * @var string
      *
+     * @ORM\Column(name="sexe", type="string", length=255)
+     */
+    private $sexe;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="licence", type="string", length=255)
      */
     private $licence;
@@ -279,5 +286,101 @@ class Participation
     public function getLicence()
     {
         return $this->licence;
+    }
+
+    /**
+     * Set points.
+     *
+     * @param int|null $points
+     *
+     * @return Participation
+     */
+    public function setPoints($points = null)
+    {
+        $this->points = $points;
+
+        return $this;
+    }
+
+    /**
+     * Get points.
+     *
+     * @return int|null
+     */
+    public function getPoints()
+    {
+        return $this->points;
+    }
+
+    /**
+     * Set categorie.
+     *
+     * @param string|null $categorie
+     *
+     * @return Participation
+     */
+    public function setCategorie($categorie = null)
+    {
+        $this->categorie = $categorie;
+
+        return $this;
+    }
+
+    /**
+     * Get categorie.
+     *
+     * @return string|null
+     */
+    public function getCategorie()
+    {
+        return $this->categorie;
+    }
+
+    /**
+     * Set echelon.
+     *
+     * @param string|null $echelon
+     *
+     * @return Participation
+     */
+    public function setEchelon($echelon = null)
+    {
+        $this->echelon = $echelon;
+
+        return $this;
+    }
+
+    /**
+     * Get echelon.
+     *
+     * @return string|null
+     */
+    public function getEchelon()
+    {
+        return $this->echelon;
+    }
+
+    /**
+     * Set club.
+     *
+     * @param string|null $club
+     *
+     * @return Participation
+     */
+    public function setClub($club = null)
+    {
+        $this->club = $club;
+
+        return $this;
+    }
+
+    /**
+     * Get club.
+     *
+     * @return string|null
+     */
+    public function getClub()
+    {
+        return $this->club;
     }
 }
