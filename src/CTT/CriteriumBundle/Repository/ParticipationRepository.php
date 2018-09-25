@@ -17,18 +17,6 @@ class ParticipationRepository extends \Doctrine\ORM\EntityRepository
         $queryBuilder = $this->createQueryBuilder('p');
         $query = $queryBuilder->getQuery();
         $results = $query->getResult(Query::HYDRATE_ARRAY);
-        for($i=0;$i<count($results);$i++){
-            $temp=json_decode(json_encode($results[$i]['dateNaissance'],true));
-            $results[$i]['dateNaissance2']=date('d-m-YTH:i:sZ',strtotime($temp->date));
-            unset($results[$i]['dateNaissance']);
-            $results[$i]['dateNaissance']=$results[$i]['dateNaissance2'];
-            unset($results[$i]['dateNaissance2']);
-            $temp=json_decode(json_encode($results[$i]['dateChoix'],true));
-            $results[$i]['dateChoix2']=date('d-m-YTH:i:sZ',strtotime($temp->date));
-            unset($results[$i]['dateChoix']);
-            $results[$i]['dateChoix']=$results[$i]['dateChoix2'];
-            unset($results[$i]['dateChoix2']);
-        }
         return $results;
     }
 }

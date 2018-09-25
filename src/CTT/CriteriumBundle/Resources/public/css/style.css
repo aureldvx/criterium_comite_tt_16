@@ -255,3 +255,43 @@ footer {
     .page-validation .container .message {
       margin: 0 auto 20px auto;
       width: 98%; }
+
+/* line 1, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_dashboard-admin.scss */
+.espace-admin {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c0c0c0; }
+  /* line 9, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_dashboard-admin.scss */
+  .espace-admin .conteneur {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    background-color: #fff; }
+    /* line 18, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_dashboard-admin.scss */
+    .espace-admin .conteneur h1 {
+      width: 100%;
+      background-color: #A33074;
+      padding: 10px 0;
+      color: #fff;
+      text-align: center;
+      border-radius: 10px 10px 0 0; }
+    /* line 26, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_dashboard-admin.scss */
+    .espace-admin .conteneur p {
+      margin: 40px 0; }
+    /* line 30, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_dashboard-admin.scss */
+    .espace-admin .conteneur a {
+      margin-bottom: 20px;
+      padding: 15px 20px;
+      background-color: #0083C7;
+      color: #fff;
+      box-shadow: 0 0 3px 1px #a8a8a8;
+      transition: box-shadow 0.2s ease-in; }
+      /* line 37, Applications/MAMP/htdocs/criterium/src/CTT/CriteriumBundle/Resources/private/sass/components/_dashboard-admin.scss */
+      .espace-admin .conteneur a:hover {
+        box-shadow: 0 0 3px 2px #a8a8a8; }

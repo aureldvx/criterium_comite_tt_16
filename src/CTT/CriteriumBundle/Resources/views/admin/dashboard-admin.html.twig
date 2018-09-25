@@ -5,9 +5,24 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Espace Admin</title>
+    {# Importation de la bibliothèque d'icônes Material Design #}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" crossorigin="anonymous">
+    {# Importation Google Font #}
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:500,700|Barlow:400,600" rel="stylesheet">
+    {# Importation de Bulma #}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" crossorigin="anonymous">
+    {# Importation de Materialize #}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" crossorigin="anonymous">
+    {# Importation des styles perso #}
+    <link rel="stylesheet" href="{{ asset('bundles/cttcriterium/css/style.css') }}" crossorigin="anonymous">
+    {# Génération du titre de la page #}
+    <title>Espace Admin – Comité Charente TT</title>
 </head>
-<body>
-<a href="{{ path('admin_export') }}">Export CSV</a>
+<body class="espace-admin">
+<div class="conteneur">
+    <h1>Récupérer le fichier des participants</h1>
+    <p>En cliquant sur le bouton, le fichier d'export CSV sera téléchargé.</p>
+    <a href="{{ path('admin_export') }}">Télécharger le fichier CSV</a>
+</div>
 </body>
 </html>
