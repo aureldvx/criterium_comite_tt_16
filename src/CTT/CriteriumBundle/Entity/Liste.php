@@ -50,13 +50,6 @@ class Liste
     private $prenom;
 
     /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="naissance", type="datetime")
-     */
-    private $naissance;
-
-    /**
      * @var int
      *
      * @ORM\Column(name="points", type="integer", nullable=true)
@@ -83,6 +76,13 @@ class Liste
      * @ORM\Column(name="club", type="string", length=255, nullable=true)
      */
     private $club;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tour", type="string", length=255, nullable=true)
+     */
+    private $tour;
 
 
     /**
@@ -165,30 +165,6 @@ class Liste
     public function getPrenom()
     {
         return $this->prenom;
-    }
-
-    /**
-     * Set naissance.
-     *
-     * @param \DateTime $naissance
-     *
-     * @return Liste
-     */
-    public function setNaissance($naissance)
-    {
-        $this->naissance = $naissance;
-
-        return $this;
-    }
-
-    /**
-     * Get naissance.
-     *
-     * @return \DateTime
-     */
-    public function getNaissance()
-    {
-        return $this->naissance;
     }
 
     /**
@@ -309,5 +285,29 @@ class Liste
     public function getSexe()
     {
         return $this->sexe;
+    }
+
+    /**
+     * Set tour.
+     *
+     * @param string|null $tour
+     *
+     * @return Liste
+     */
+    public function setTour($tour = null)
+    {
+        $this->tour = $tour;
+
+        return $this;
+    }
+
+    /**
+     * Get tour.
+     *
+     * @return string|null
+     */
+    public function getTour()
+    {
+        return $this->tour;
     }
 }

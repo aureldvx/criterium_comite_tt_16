@@ -51,13 +51,6 @@ class Participation
     private $licence;
 
     /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="dateNaissance", type="datetime")
-     */
-    private $dateNaissance;
-
-    /**
      * @var int
      *
      * @ORM\Column(name="points", type="integer", nullable=true)
@@ -99,6 +92,12 @@ class Participation
      */
     private $dateChoix;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tour", type="string", length=255, nullable=true)
+     */
+    private $tour;
 
 
 
@@ -166,30 +165,6 @@ class Participation
     public function getPrenom()
     {
         return $this->prenom;
-    }
-
-    /**
-     * Set dateNaissance.
-     *
-     * @param \DateTime $dateNaissance
-     *
-     * @return Participation
-     */
-    public function setDateNaissance($dateNaissance)
-    {
-        $this->dateNaissance = $dateNaissance;
-
-        return $this;
-    }
-
-    /**
-     * Get dateNaissance.
-     *
-     * @return \DateTime
-     */
-    public function getDateNaissance()
-    {
-        return $this->dateNaissance;
     }
 
     /**
@@ -406,5 +381,29 @@ class Participation
     public function getSexe()
     {
         return $this->sexe;
+    }
+
+    /**
+     * Set tour.
+     *
+     * @param string|null $tour
+     *
+     * @return Participation
+     */
+    public function setTour($tour = null)
+    {
+        $this->tour = $tour;
+
+        return $this;
+    }
+
+    /**
+     * Get tour.
+     *
+     * @return string|null
+     */
+    public function getTour()
+    {
+        return $this->tour;
     }
 }

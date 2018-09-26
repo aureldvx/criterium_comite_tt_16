@@ -38,7 +38,7 @@ class LicencieController extends Controller
             $now = new \DateTime();
 
             // Dates limites TOUR 1
-            $tour1debut = new \DateTime('2018-09-28 00:01:00');
+            $tour1debut = new \DateTime('2018-09-20 00:01:00');
             $tour1fin1 = new \DateTime('2018-10-10 11:00:00');
             $tour1fin2 = new \DateTime('2018-10-11 23:59:00');
 

@@ -7,7 +7,7 @@
 		"uuidString": "C8DB0452-386A-4A8F-BBBD-E745A325D7A5"
 		}
 	],
-"creatorBuild": "28795",
+"creatorBuild": "28815",
 "files": {
 	"/.gitattributes": {
 		"cB": 0,
@@ -149,6 +149,20 @@
 		"oAP": "/composer.lock",
 		"oF": 1
 		},
+	"/import-cron/database.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/import-cron/database.php",
+		"oF": 0
+		},
+	"/import-cron/importCron.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/import-cron/importCron.php",
+		"oF": 0
+		},
 	"/phpunit.xml.dist": {
 		"cB": 0,
 		"ft": 8192,
@@ -186,13 +200,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/src/CTT/CriteriumBundle/Controller/AdminController.php",
-		"oF": 0
-		},
-	"/src/CTT/CriteriumBundle/Controller/importController.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/src/CTT/CriteriumBundle/Controller/importController.php",
 		"oF": 0
 		},
 	"/src/CTT/CriteriumBundle/Controller/LicencieController.php": {
@@ -78568,7 +78575,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 558706202,
-	"displayValue": "criterium",
+	"displayValue": "criterium_comitett16",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "/web/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0
