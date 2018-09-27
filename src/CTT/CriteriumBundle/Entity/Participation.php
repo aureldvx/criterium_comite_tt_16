@@ -93,9 +93,9 @@ class Participation
     private $dateChoix;
 
     /**
-     * @var string
+     * @var int
      *
-     * @ORM\Column(name="tour", type="string", length=255, nullable=true)
+     * @ORM\Column(name="tour", type="integer", nullable=true)
      */
     private $tour;
 

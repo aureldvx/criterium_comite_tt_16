@@ -16,31 +16,27 @@ $data = array_values($data);
 
 foreach($data as $import)
 {
-    $import = utf8_encode($import);
     $explosion = explode(',', $import);
-    if(in_array($explosion[2], $imports))
-    {
-        unset($import);
-    }else
-    {
-        $imports[$i]['nom'] = $explosion[0];
-        $imports[$i]['prenom'] = $explosion[1];
-        $imports[$i]['licence'] = $explosion[2];
-        $imports[$i]['points'] = $explosion[3];
-        $imports[$i]['club'] = $explosion[4];
-        $imports[$i]['echelon'] = $explosion[5];
-        $imports[$i]['tour'] = $explosion[6];
-        $imports[$i]['categorie'] = $explosion[7];
-        $imports[$i]['sexe'] = $explosion[8];
-    }
+
+    $imports[$i]['nom'] = preg_replace('#\n|\t|\r| #', '',$explosion[0]);
+    $imports[$i]['prenom'] =  preg_replace('#\n|\t|\r| #', '',$explosion[1]);
+    $imports[$i]['licence'] =  preg_replace('#\n|\t|\r| #', '',$explosion[2]);
+    $imports[$i]['points'] =  preg_replace('#\n|\t|\r| #', '',$explosion[3]);
+    $imports[$i]['club'] =  preg_replace('#\n|\t|\r|#', '',$explosion[4]);
+    $imports[$i]['echelon'] =  preg_replace('#\n|\t|\r| #', '',$explosion[5]);
+    $imports[$i]['tour'] =  preg_replace('#\n|\t|\r|Tour #', '',$explosion[6]);
+    $imports[$i]['categorie'] =  preg_replace('#\n|\t|\r| #', '',$explosion[7]);
+    $imports[$i]['sexe'] =  preg_replace('#\n|\t|\r| #', '',$explosion[8]);
     $i++;
 }
 
 $db = \Database::connect();
-$statement = $db->query('DELETE * FROM liste');
+$statement = $db->query('DELETE FROM liste');
+\Database::disconnect();
+
+$db = \Database::connect();
 foreach($imports as $inscrit)
 {
-
     $statement = $db->prepare('INSERT INTO liste (licence,nom,prenom,points,categorie,echelon,club,sexe,tour) values(?,?,?,?,?,?,?,?,?)');
     $statement->execute(array($inscrit['licence'], $inscrit['nom'], $inscrit['prenom'], $inscrit['points'], $inscrit['categorie'], $inscrit['echelon'], $inscrit['club'], $inscrit['sexe'], $inscrit['tour']));
 }

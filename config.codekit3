@@ -451,6 +451,48 @@
 		"oAP": "/var/sessions/.gitkeep",
 		"oF": 1
 		},
+	"/var/sessions/dev/sess_4sivuqaqud5v8426kikn1f8gc3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/var/sessions/dev/sess_4sivuqaqud5v8426kikn1f8gc3",
+		"oF": 0
+		},
+	"/var/sessions/dev/sess_8m9dunr001ndchcf8sm8buc17s": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/var/sessions/dev/sess_8m9dunr001ndchcf8sm8buc17s",
+		"oF": 0
+		},
+	"/var/sessions/dev/sess_b0n4n7adefi4ra86js37vgrdsp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/var/sessions/dev/sess_b0n4n7adefi4ra86js37vgrdsp",
+		"oF": 0
+		},
+	"/var/sessions/dev/sess_gmh2o8hkbhva6fr4etj2ij5qk5": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/var/sessions/dev/sess_gmh2o8hkbhva6fr4etj2ij5qk5",
+		"oF": 0
+		},
+	"/var/sessions/dev/sess_rkljgk53q7milm9qu8d3bomgoo": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/var/sessions/dev/sess_rkljgk53q7milm9qu8d3bomgoo",
+		"oF": 0
+		},
+	"/var/sessions/dev/sess_t3p3enla8q8k3spvr49km8p637": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/var/sessions/dev/sess_t3p3enla8q8k3spvr49km8p637",
+		"oF": 0
+		},
 	"/var/SymfonyRequirements.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -78575,7 +78617,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 558706202,
-	"displayValue": "criterium_comitett16",
+	"displayValue": "criterium",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "/web/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0

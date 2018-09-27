@@ -6,7 +6,7 @@
 <section class="page-validation">
     <div class="container z-depth-2">
         <div class="zone-title">
-            <h2>Choix de participation – TOUR 1</h2>
+            <h2>Choix de participation – Tour {{ licencie.tour}}</h2>
         </div>
         <form action="{{ path('licencie_traitement') }}" method="get" role="form">
             <div class="row">
@@ -24,12 +24,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="input-field col s12 m4">
-                    <input type="text" name="categorie" id="categorie" value="{{ licencie.categorie | capitalize }}" disabled>
-                    <label for="categorie">Catégorie</label>
+                <div class="input-field col s12 m7">
+                    <input type="text" name="echelon" id="echelon" value="{{ licencie.echelon | capitalize }}" disabled>
+                    <label for="echelon">Échelon</label>
                 </div>
 
-                <div class="input-field col s12 m8">
+                <div class="input-field col s12 m5">
                     <input type="text" name="club" id="club" value="{{ licencie.club | capitalize }}" disabled>
                     <label for="club">Club</label>
                 </div>
@@ -63,6 +63,7 @@
             </div>
             <div class="divider"></div>
             <input type="hidden" name="licence" id="licence" value="{{ licencie.licence }}">
+            <input type="hidden" name="tour" id="tour" value="{{ licencie.tour }}">
             <button type="submit" class="btn btn-submit waves-effects waves-light" disabled>Valider mon choix</button>
         </form>
     </div>

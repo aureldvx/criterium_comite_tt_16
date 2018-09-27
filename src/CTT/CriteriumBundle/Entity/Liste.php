@@ -24,7 +24,7 @@ class Liste
     /**
      * @var string
      *
-     * @ORM\Column(name="licence", type="string", length=255, unique=true)
+     * @ORM\Column(name="licence", type="string", length=255)
      */
     private $licence;
 
@@ -78,9 +78,9 @@ class Liste
     private $club;
 
     /**
-     * @var string
+     * @var int
      *
-     * @ORM\Column(name="tour", type="string", length=255, nullable=true)
+     * @ORM\Column(name="tour", type="integer", nullable=true)
      */
     private $tour;
 

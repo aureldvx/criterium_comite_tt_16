@@ -4,11 +4,12 @@ licencie_connexion:
         _controller: CTTCriteriumBundle:Licencie:connexion
         
 licencie_validation:
-    path: /validation/{licence}
+    path: /validation/{licence}-{tour}
     defaults:
         _controller: CTTCriteriumBundle:Licencie:validation
     requirements:
         licence: '\d+'
+        tour: '\d'
         
 licencie_traitement:
     path: /traitement

@@ -2,6 +2,8 @@
 
 namespace CTT\CriteriumBundle\Repository;
 
+use Doctrine\ORM\Query;
+
 /**
  * ListeRepository
  *
@@ -10,4 +12,26 @@ namespace CTT\CriteriumBundle\Repository;
  */
 class ListeRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findListe($value)
+    {
+        $queryBuilder = $this->createQueryBuilder('l');
+        $queryBuilder
+            ->where('l.tour = :tour')
+            ->setParameter('tour', $value);
+        $query = $queryBuilder->getQuery();
+        $results = $query->getResult(Query::HYDRATE_ARRAY);
+        return $results;
+    }
+
+    public function getListeLnatt($licence, $tour)
+    {
+        $qb = $this->createQueryBuilder('l');
+        $qb
+            ->where('l.licence = :licence')
+            ->setParameter('licence', $licence)
+            ->andWhere('l.tour = :tour')
+            ->setParameter('tour', $tour);
+        $results = $qb->getQuery()->getResult(Query::HYDRATE_ARRAY);
+        return $results;
+    }
 }

@@ -12,11 +12,26 @@ use Doctrine\ORM\Query;
  */
 class ParticipationRepository extends \Doctrine\ORM\EntityRepository
 {
-    public function findInscrits()
+    public function findInscrits($value)
     {
         $queryBuilder = $this->createQueryBuilder('p');
+        $queryBuilder
+            ->where('p.tour = :tour')
+            ->setParameter('tour', $value);
         $query = $queryBuilder->getQuery();
         $results = $query->getResult(Query::HYDRATE_ARRAY);
+        return $results;
+    }
+
+    public function getParticipants($licence, $tour)
+    {
+        $qb = $this->createQueryBuilder('p');
+        $qb
+            ->where('p.licence = :licence')
+            ->setParameter('licence', $licence)
+            ->andWhere('p.tour = :tour')
+            ->setParameter('tour', $tour);
+        $results = $qb->getQuery()->getResult();
         return $results;
     }
 }
