@@ -1,5 +1,5 @@
-criterium
-=========
+WebApp de gestion pour le Comité TT16
+=====================================
 
 Un projet Symfony réalisé pour le Comité Charente de Tennis de Table.
 
